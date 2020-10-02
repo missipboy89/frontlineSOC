@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+
+    <div class="ui inverted segment">
+      <div class="ui inverted secondary menu">
+        <a href="/" class="red item active">Home</a>
+        <a href="/" class="red item active">Mission</a>
+        <a href="/" class="red item active">Calendar</a>
+        <a href="/" class="red item active">Contact</a>
+        <div class="right menu">
+          <a href="/" class="red item active">Login</a>
+        </div>
+      </div>
+    </div>
+    <h1 class="platoon">
+        FRONTLINE SOC
+    </h1>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: PLATOoN;
+  src: local("PLATOoN"), 
+  url(./fonts/PLATOoN.ttf) format("truetype");
+}
+
+.platoon {
+  font-family: "PLATOoN";
+  font-size: 120px;
+  color: solid black;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
